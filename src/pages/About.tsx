@@ -1,3 +1,9 @@
+import AnimatedPage from "../components/AnimatedPage";
+
 export default function About() {
-    return <h1>Tentang Kami</h1>
+    return (
+      <AnimatedPage>
+        <h1>Tentang Kami</h1>
+      </AnimatedPage>
+    )
   }
