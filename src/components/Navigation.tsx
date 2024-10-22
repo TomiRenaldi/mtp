@@ -13,9 +13,9 @@ export default function Navigation() {
               <div className="ml-10 flex items-baseline space-x-4">
                 <Link to="/" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">Beranda</Link>
                 <Link to="/About" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">Tentang</Link>
-                <Link to="/OurPartners" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">Mitra Kami</Link>
+                <Link to="/OurPartners" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">Mitra</Link>
                 <Link to="/Leader" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">Leader</Link>
-                <Link to="/ContactUs" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">Hubungi Kami</Link>
+                <Link to="/ContactUs" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700">Hubungi</Link>
               </div>
             </div>
           </div>
