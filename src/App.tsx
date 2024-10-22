@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import ErrorBoundary from "./components/ErrorBoundary";
 
@@ -11,6 +11,7 @@ const Leader = lazy(() => import("./pages/Leader"));
 const ContactUs = lazy(() => import("./pages/ContactUs"));
 
 export default function App() {
+
   return (
     <Router>
       <ErrorBoundary>
