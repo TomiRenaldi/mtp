@@ -1,26 +1,29 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import axios from "axios";
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [fadeIn, setFadeIn] = useState(false); // State untuk animasi
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsSubmitted(true);
-    setFadeIn(true); // Aktifkan animasi
+    setIsLoading(true);
 
-    setTimeout(() => {
-      setFadeIn(false); // Matikan animasi fade-in sebelum menghilang
-      setTimeout(() => {
-        setIsSubmitted(false);
-        setFormData({ name: "", email: "", message: "" });
-      }, 300); // Tambah sedikit delay biar animasi keluar smooth
-    }, 3000);
+    try {
+      await axios.post("http://localhost:5000/send-email", formData);
+      setIsSubmitted(true);
+      setTimeout(() => setIsSubmitted(false), 3000);
+    } catch (error) {
+      console.error("Error sending email:", error);
+      alert("Failed to send message. Please try again.");
+    }
+
+    setIsLoading(false);
   };
 
   return (
@@ -68,18 +71,14 @@ const Contact = () => {
         </div>
 
         <button type="submit" className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-500 transition">
-          Send Message
+          {isLoading ? "Sending..." : "Send Message"}
         </button>
       </form>
 
       {/* Modal Berhasil Submit */}
       {isSubmitted && (
         <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50">
-          <div
-            className={`bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center transition-all duration-300 transform ${
-              fadeIn ? "opacity-100 scale-100" : "opacity-0 scale-90"
-            }`}
-          >
+          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
             <h3 className="text-2xl font-bold mb-4 text-green-500">Success!</h3>
             <p>Thank you, {formData.name}! Your message has been sent.</p>
           </div>
