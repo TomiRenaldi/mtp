@@ -2,19 +2,15 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="bg-blue-600 text-white p-4">
-      <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-xl font-bold">Company</h1>
-        <div className="space-x-4">
-          <Link to="/" className="hover:underline">
+    <header className="fixed top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container flex h-20 items-center justify-between">
+        <span>
+          <Link to="/" className="flex items-center space-x-2">
             Home
           </Link>
-          <Link to="/contact" className="hover:underline">
-            Contact
-          </Link>
-        </div>
+        </span>
       </div>
-    </nav>
+    </header>
   );
 }
 
