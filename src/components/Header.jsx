@@ -2,13 +2,20 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <header className="fixed top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-20 items-center justify-between">
-        <span>
-          <Link to="/" className="flex items-center space-x-2">
-            Home
+    <header className="fixed py-4 top-0 z-50 w-full border-b border-b-gray-700 bg-background/95 backdrop-blur-xs supports-[backdrop-filter]:bg-background/60">
+      <div className="container mx-auto px-4 flex justify-between items-center text-white">
+        <Link to="/">
+          <img
+            className="h-10 w-auto"
+            src="/src/assets/logomtp.png"
+            alt="Flowers & Saints Logo"
+          />
+        </Link>
+        <div className="space-x-4">
+          <Link to="/contact" className="hover:underline">
+            Hubungi Kami
           </Link>
-        </span>
+        </div>
       </div>
     </header>
   );
