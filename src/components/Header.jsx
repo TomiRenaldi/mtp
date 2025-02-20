@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <header className="fixed py-4 top-0 z-50 w-full border-b border-b-gray-700 bg-background/95 backdrop-blur-xs supports-[backdrop-filter]:bg-background/60">
+    <header className="fixed py-4 top-0 z-50 w-full border-b border-b-blue-950 bg-background/95 backdrop-blur-xs supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 flex justify-between items-center text-white">
         <Link to="/">
           <img
@@ -12,7 +12,7 @@ function Navbar() {
           />
         </Link>
         <div className="space-x-4">
-          <Link to="/contact" className="hover:underline">
+          <Link to="/contact" className="hover:underline bg-clip-text text-transparent bg-blue-200">
             Hubungi Kami
           </Link>
         </div>

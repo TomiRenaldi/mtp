@@ -1,55 +1,32 @@
 import { motion } from "framer-motion";
 
-const services = [
-  {
-    title: "Web Development",
-    description:
-      "We build modern and high-performance websites for businesses.",
-    icon: "🌐",
-  },
-  {
-    title: "Mobile App Development",
-    description: "Creating seamless mobile applications for iOS and Android.",
-    icon: "📱",
-  },
-  {
-    title: "UI/UX Design",
-    description: "Designing user-friendly and engaging digital experiences.",
-    icon: "🎨",
-  },
-  {
-    title: "Digital Marketing",
-    description:
-      "Boost your business growth with effective digital strategies.",
-    icon: "📈",
-  },
-];
-
 const ServicesSection = () => {
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      viewport={{ once: true }}
-      className="py-16 bg-gray-100 text-gray-800"
-    >
-      <div className="container mx-auto px-6 text-center">
-        <h2 className="text-4xl font-bold text-blue-600 mb-10">Our Services</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-xl transition transform hover:-translate-y-2 hover:scale-105"
+    <div className="relative w-full overflow-hidden bg-background py-16">
+      <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background z-10" />
+      <motion.div
+        className="flex whitespace-nowrap"
+        animate={{ x: ["0%", "-50%"] }}
+        transition={{
+          repeat: Number.POSITIVE_INFINITY,
+          ease: "linear",
+          duration: 20,
+        }}
+      >
+        {[...Array(4)].map((_, index) => (
+          <div key={index} className="flex items-center mx-4">
+            <span
+              className="text-7xl sm:text-8xl md:text-9xl font-bold text-transparent px-4"
+              style={{
+                WebkitTextStroke: "1px rgb(156 163 175)", // tailwind gray-400
+              }}
             >
-              <span className="text-4xl">{service.icon}</span>
-              <h3 className="text-xl font-semibold mt-4">{service.title}</h3>
-              <p className="text-gray-600 mt-2">{service.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </motion.section>
+              Flowers & Saints
+            </span>
+          </div>
+        ))}
+      </motion.div>
+    </div>
   );
 };
 
