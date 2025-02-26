@@ -26,9 +26,11 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="max-w-[750px] text-center text-lg text-muted-foreground sm:text-xl bg-clip-text text-transparent bg-gradient-to-br from-white to-blue-800"
+            className="max-w-[750px] text-center text-lg text-muted-foreground md:text-2xl bg-clip-text text-transparent bg-gradient-to-br from-white to-blue-800"
           >
-            Kami adalah solusi terbaik penanganan kredit macet nasabah yang bekerja dengan komunikasi dua arah yang berorientasi hasil dan angka yang memuaskan.
+            Kami adalah solusi terbaik penanganan kredit macet nasabah yang
+            bekerja dengan komunikasi dua arah yang berorientasi pada hasil dan
+            angka yang memuaskan untuk kepercayaan mitra kami.
           </motion.span>
         </motion.div>
       </div>
