@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-20 bg-blue-950 text-white">
+    <section id="about" className="py-20 min-h-screen p-4 bg-blue-950 text-white">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -23,13 +23,7 @@ const AboutSection = () => {
             didirikan di Bandung pada tanggal 12 Desember 2019 dengan Akte No.
             11, beralamat di Jl. Sukaati Raya no. 24 Bandung 40255 Jawa Barat,
             oleh beberapa orang yang berlatar belakang dan berpengalaman dalam
-            bidang jasa penagihan kredit macet. Juanda JK. Sirait membangun
-            perusahaan ini berdasar pada idealismenya untuk mewujudkan PT MUARA
-            TOBA PERSADA menjadi perusahaan yang berorientasi pada kepuasan
-            pengguna jasa perusahaan dan menjunjung tinggi kejujuran dan
-            profesionalisme dalam bekerja. Dengan demikian, PT MUARA TOBA
-            PERSADA diharapkan menjadi solusi bagi industri perbankan dalam
-            penanganan masalah kredit macet perbankan dewasa ini.
+            bidang jasa penagihan kredit macet.
           </p>
         </div>
       </motion.div>

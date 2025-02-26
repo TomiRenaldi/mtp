@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const MarqueeItem = ({ images, from, to }) => {
   return (
-    <div className="flex MyGradient">
+    <div className="inline-flex">
       <motion.div
         initial={{ x: `${from}` }}
         animate={{ x: `${to}` }}
@@ -11,7 +11,7 @@ const MarqueeItem = ({ images, from, to }) => {
         className="flex flex-shrink-0"
       >
         {images.map((image, index) => {
-          return <img className="h-20 w-83 pr-30" src={image} key={index} />;
+          return <img className="h-13 max-w-96 pr-30" src={image} key={index} />;
         })}
       </motion.div>
 
@@ -22,7 +22,7 @@ const MarqueeItem = ({ images, from, to }) => {
         className="flex flex-shrink-0"
       >
         {images.map((image, index) => {
-          return <img className="h-20 w-83 pr-30" src={image} key={index} />;
+          return <img className="h-13 max-w-96 pr-30" src={image} key={index} />;
         })}
       </motion.div>
     </div>

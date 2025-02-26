@@ -10,12 +10,22 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
           className="container flex flex-col items-center justify-center gap-6 text-center"
         >
+          <motion.a
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3 }}
+              href="#"
+              className="inline-flex items-center rounded-full bg-muted px-4 py-1.5 text-sm font-medium border-2 border-solid"
+            >
+              ✨<div className="mx-2 h-4" orientation="vertical" />Beta Release
+            </motion.a>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
             className="text-4xl font-semibold leading-tight tracking-tighter md:text-6xl lg:text-7xl lg:leading-[1.1]"
           >
+            
             <span className="bg-clip-text text-transparent bg-gradient-to-br from-white to-blue-900">
               Selamat datang di website
               <br />
