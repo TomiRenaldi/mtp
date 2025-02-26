@@ -7,7 +7,7 @@ function Navbar() {
         <Link to="/">
           <img
             className="h-10 w-auto"
-            src="/src/assets/logomtp.png"
+            src="/public/assets/logomtp.png"
             alt="Flowers & Saints Logo"
           />
         </Link>
