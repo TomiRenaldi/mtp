@@ -15,9 +15,9 @@ const HeroSection = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
               href="#"
-              className="inline-flex items-center rounded-full bg-muted px-4 py-1.5 text-sm font-medium border-2 border-solid"
+              className="inline-flex items-center rounded-full bg-muted px-4 py-1.5 text-sm font-medium border-1 border-blue-600 text-amber-300 border-solid"
             >
-              ✨<div className="mx-2 h-4" orientation="vertical" />Beta Release
+              ✨<div className="mx-1 h-3" orientation="vertical" />Beta Pra - Release
             </motion.a>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
