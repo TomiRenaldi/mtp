@@ -3,7 +3,6 @@ import CTASection from "../components/section/CTASection";
 import HeroSection from "../components/section/HeroSection"
 import PortfolioSection from "../components/section/PortfolioSection"
 import ServicesSection from "../components/section/ServicesSection"
-import Maps from "../components/Maps";
 
 function Home() {
   return (
@@ -12,7 +11,6 @@ function Home() {
       <AboutSection />
       <ServicesSection />
       <PortfolioSection />
-      <Maps />
       <CTASection />
     </div>
   );
