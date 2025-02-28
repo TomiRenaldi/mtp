@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import AboutSection from "../components/section/AboutSection"
 import CTASection from "../components/section/CTASection";
 import HeroSection from "../components/section/HeroSection"
@@ -12,6 +13,7 @@ function Home() {
       <ServicesSection />
       <PortfolioSection />
       <CTASection />
+      <SpeedInsights />
     </div>
   );
 }
