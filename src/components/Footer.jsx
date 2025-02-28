@@ -34,7 +34,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="mt-10 border-t border-gray-700 pt-4 text-gray-500 text-sm text-center">
-          © {new Date().getFullYear()} Our Company. All rights reserved.
+          © {new Date().getFullYear()} 2019 - 2025, PT. Muara Toba Persada. All Rights Reserved.
         </div>
       </div>
     </footer>
