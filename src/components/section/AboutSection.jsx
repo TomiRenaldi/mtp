@@ -5,50 +5,34 @@ import { Timeline } from "../Timeline";
 const events = [
   {
     id: 1,
-    title: "Company Founded",
+    title: "Perusahaan di dirikan",
     date: "January 2018",
     description:
-      "Our journey began in a small garage with just three team members and a vision to change the industry.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quae natus, adipisci quaerat ea harum! Ipsa id inventore voluptates sint praesentium totam qui, commodi nulla. Sapiente dignissimos suscipit numquam iure?",
     image: "/placeholder.svg?height=200&width=300",
   },
   {
     id: 2,
-    title: "First Major Client",
-    date: "March 2019",
+    title: "Pertama menjadi mitra Bank BUMN",
+    date: "March 2020",
     description:
-      "We landed our first enterprise client, marking a significant milestone in our growth journey.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quae natus, adipisci quaerat ea harum! Ipsa id inventore voluptates sint praesentium totam qui, commodi nulla. Sapiente dignissimos suscipit numquam iure?.",
     image: "/placeholder.svg?height=200&width=300",
   },
   {
     id: 3,
-    title: "Office Expansion",
-    date: "June 2020",
+    title: "Peresmian Kantor Utama di Kota Bandung",
+    date: "June 2022",
     description:
-      "As our team grew to 25 members, we moved to a larger office space in the heart of downtown.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quae natus, adipisci quaerat ea harum! Ipsa id inventore voluptates sint praesentium totam qui, commodi nulla. Sapiente dignissimos suscipit numquam iure?.",
     image: "/placeholder.svg?height=200&width=300",
   },
   {
     id: 4,
-    title: "Product Launch",
-    date: "November 2021",
+    title: "Agency Terbaik",
+    date: "November 2023",
     description:
-      "After months of development, we launched our flagship product to critical acclaim in the market.",
-    image: "/placeholder.svg?height=200&width=300",
-  },
-  {
-    id: 5,
-    title: "International Expansion",
-    date: "February 2023",
-    description:
-      "We opened our first international office in London, expanding our global footprint.",
-    image: "/placeholder.svg?height=200&width=300",
-  },
-  {
-    id: 6,
-    title: "Industry Award",
-    date: "October 2024",
-    description:
-      "Our team was honored with the prestigious Industry Innovation Award for our contributions to the field.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quae natus, adipisci quaerat ea harum! Ipsa id inventore voluptates sint praesentium totam qui, commodi nulla. Sapiente dignissimos suscipit numquam iure?.",
     image: "/placeholder.svg?height=200&width=300",
   },
 ];
